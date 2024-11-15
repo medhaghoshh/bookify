@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Suggestions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <!-- Header -->
+        <header>
+            <img src="./assets/ufFe2CYzZppgaE3NweuQsXF9qlhIxCzaWJd4I77anLMlqZPnA-removebg-preview (1).png" alt="bookify Logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Educational</a></li>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">New & Popular</a></li>
+                    <li><a href="#">My List</a></li>
+                </ul>
+            </nav>
+            <div class="sign-in-out">
+                <button onclick="showModal('signInModal')">Sign In</button>
+                <button onclick="showModal('signUpModal')">Sign Up</button>
+            </div>
+        </header>
+  <!-- Search Bar Section -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search for movies or TV shows...">
+    <button onclick="search()">Search</button>
+</div>
+
+<!-- Content Section -->
+<div class="content-section">
+    <!-- Popular Section -->
+    <h2>Popular on BOOKIFY</h2>
+    <div class="slider-buttons">
+        <button class="slider-button" onclick="scrollLeft('popular')">❮</button>
+        <button class="slider-button" onclick="scrollRight('popular')">❯</button>
+    </div>
+    <div class="movie-row" id="popular">
+        <img src="https://www.bookswagon.com/productimages/mainimages/930/9789390166930.jpg" alt="Movie 1">
+        <img src="https://www.bookswagon.com/productimages/mainimages/895/9781786330895.jpg" alt="Movie 2">
+        <img src="https://www.bookswagon.com/productimages/mainimages/839/9788194790839.jpg" alt="Movie 3">
+        <img src="https://www.bookswagon.com/productimages/mainimages/368/9781501110368.jpg" alt="Movie 4">
+        <img src="https://d2g9wbak88g7ch.cloudfront.net/productimages/images200/015/9788183286015.jpg" alt="Movie 5">
+        <img src="https://www.bookswagon.com/productimages/images200/139/9781612681139.jpg" alt="Movie 11">
+        <img src="https://www.bookswagon.com/productimages/images200/781/9781861972781.jpg" alt="Movie 12">
+        
+    </div>
+
+      <!-- Trending Now Section -->
+      <h2>Trending Now</h2>
+      <div class="slider-buttons">
+          <button class="slider-button" onclick="scrollLeft('trending')">❮</button>
+          <button class="slider-button" onclick="scrollRight('trending')">❯</button>
+      </div>
+      <div class="movie-row" id="trending">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1583221123i/52022378.jpg" alt="Movie 6">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600985305i/55446843.jpg" alt="Movie 7">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1715180312i/213066340.jpg" alt="Movie 13">
+          <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1714635852i/212510254.jpg" alt="Movie 8">
+          <img src="https://prodimage.images-bn.com/pimages/9781665971829_p0_v1_s600x595.jpg" alt="Movie 9">
+          <img src="https://images3.penguinrandomhouse.com/cover/9780735269958" alt="Movie 10">
+          <img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--41zIksr4--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_972/https://reviewed-production.s3.amazonaws.com/1715310066895/bookcoversjksdjfgsg%29.png" alt="Movie 14">
+      </div>
+      <script defer src="https://widget.quickblox.com/chat-widget-loader-0a6d79e18a6287598cef02525893364a8d622fc4.js?btn=true" type="text/javascript"></script>
+</body>
+</html>
